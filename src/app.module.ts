@@ -17,7 +17,6 @@ MongooseModule.forRootAsync({
   imports:[ConfigModule],
 useFactory:(configService:ConfigService)=>{
 const envType=configService.get("NODE_ENV");
-
 if(envType==="LOCAL"){
  
 return{
